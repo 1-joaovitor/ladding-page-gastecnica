@@ -34,7 +34,7 @@ export const Presentation = ()=>{
                 Gastécnica
             </Typography>
             <Typography fontWeight='700' color='#FF8C00' variant='h2'>
-                O melhor serviço também tem o melhor atendimento
+                O melhor serviço e o melhor atendimento
             </Typography>
             <Typography  fontWeight='500' color='#E1E1E6'>
                 A Gastécnica conta com muitos anos de experiência no segmento, 
