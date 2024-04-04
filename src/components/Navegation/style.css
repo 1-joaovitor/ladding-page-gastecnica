@@ -1,0 +1,33 @@
+.icon-box{
+    background-color: #34af23;
+    border-radius: 50%;
+    display: flex;
+    width: 65px;
+    height: 55px;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 12px;
+    margin-left: 10px;
+  z-index: 1;
+
+}  
+.icon{
+    animation: whats 3s ease-in-out infinite ;
+}
+
+@keyframes whats  {
+    0%{
+        transform: scale(0.5);
+    }
+    
+    50%{
+        transform: scale(0.7);
+    }
+   
+    100%{
+        transform: scale(1);
+    }
+
+}

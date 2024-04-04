@@ -22,7 +22,7 @@ export default function Navbar() {
     },
   });
     return (
-      <AppBar theme={theme} color='neutral' position='fixed' padding='0px 30px'>
+      <AppBar theme={theme} color='neutral' position='relative' padding='0px 30px'>
         <Box sx={{borderBottom:'1px solid #E1E1E6', display: 'flex', alignItems:'center', justifyContent:'space-evenly'}} >
           <Box><img width='160px' src={logo}/></Box>
           

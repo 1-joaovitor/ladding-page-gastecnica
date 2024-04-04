@@ -6,6 +6,7 @@ import { Box, Link} from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import '../Navegation/style.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'transparent',
@@ -15,6 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: '#E1E1E6',
   fontSize:'16px',
   width:'70px',
+  boxShadow:'none'
   
 }));
 
@@ -23,9 +25,25 @@ export default function Navegation() {
 
     <Box sx={{position:'relative' }} >  
       <Stack   direction="row" spacing={1}>
-        <Link color="inherit" target='_blank' href="https://www.youtube.com/channel/UCxmpwaM-avvopEOMuMit2Ag" underline="none"><Item><YouTubeIcon sx={{ fontSize: 30, color:'rgb(187, 0, 0)'}}/></Item></Link>
-        <Link target='_blank' color="inherit" href="https://api.whatsapp.com/send?phone=5584988264980&text=Ol%C3%A1%2C%20gast%C3%A9cnica!" underline="none"><Item><WhatsAppIcon sx={{ fontSize: 30, color:'#34af23' }}/></Item></Link>
-        <Link target='_blank' color="inherit" href="https://instagram.com/gastecnica_servicos?igshid=NjZiMGI4OTY=" underline="none"><Item ><InstagramIcon sx={{ fontSize: 30, color:'rgb(81, 127, 164)' }}/></Item></Link>
+        <Link color="inherit" target='_blank' href="https://www.youtube.com/channel/UCxmpwaM-avvopEOMuMit2Ag" underline="none">
+            <Item>
+              <YouTubeIcon sx={{ fontSize: 30, color:'rgb(187, 0, 0)'}}/>
+            </Item>
+        </Link>
+        <Box>
+            <Box className='icon-box' >
+              <Link target='_blank' color="inherit" href="https://api.whatsapp.com/send?phone=5584988264980&text=Ol%C3%A1%2C%20gast%C3%A9cnica!" underline="none">
+                <Item >
+                  <WhatsAppIcon className='icon' sx={{ fontSize: 50, color:'white' }}/>
+                </Item>
+            </Link>
+            </Box>
+        </Box>
+        <Link  target='_blank' color="inherit" href="https://instagram.com/gastecnica_servicos?igshid=NjZiMGI4OTY=" underline="none">
+            <Item >
+              <InstagramIcon sx={{ fontSize: 30, color:'rgb(81, 127, 164)' }}/>
+            </Item>
+        </Link>
       </Stack>
     </Box>
   );

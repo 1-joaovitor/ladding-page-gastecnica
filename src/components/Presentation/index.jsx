@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
   
 export const Presentation = ()=>{
     return(
-    <Container maxWidth="lg" sx={{display:'flex', padding:'0px', backgroundColor:'transparent', marginTop:'80px'}} >
+    <Container maxWidth="lg" sx={{display:'flex', padding:'0px', backgroundColor:'transparent', marginTop:'20px'}} >
         <Stack  direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 1, md: 4 }}>
   
     <Item sx={{backgroundColor:'transparent'}}>
